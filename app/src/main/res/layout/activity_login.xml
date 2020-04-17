@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".login">
+
+
+    <EditText
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:id="@+id/cnf_password_register"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="336dp"
+        android:autofillHints="Password"
+        android:background="@drawable/login_input"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textColorHint="#707070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:id="@+id/email_register"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:autofillHints="Email ID"
+        android:background="@drawable/login_input"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="  Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#707070"
+        app:layout_constraintBottom_toTopOf="@+id/cnf_password_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <ImageView
+        android:id="@+id/registerbtn_login"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnf_password_register"
+        app:srcCompat="@drawable/loginbutton"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toTopOf="@+id/email_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356"
+        app:srcCompat="@drawable/loginicon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="#707070"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
